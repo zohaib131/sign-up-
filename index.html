@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header >
+            <h1>Welcome To My Belog Site</h1>
+            <nav>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#content">Content</a></li>
+                <li><a href="#about">About</a></li>
+              </ul>
+            </nav>
+        </header>
+        <main>
+        <section id="posts">
+             <article class="post">
+                <h2>First Blog Post</h2>
+                <p class="date">December 5,2024</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, soluta fugiat! Consequuntur perferendis iure in vero, voluptatibus laborum iusto doloribus ullam assumenda voluptates, tempore ipsam consequatur corporis et cupiditate quas!</p>
+                <button class="read-more" onclick="togglePost(1)">Learn More</button>
+                <p id="post-1" class="more-content" style="display: flex;">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+             </article>
+        </section>
+        <section id="add-post">
+            <h2>Add New Post</h2>
+            <form id="postForm">
+                <label for="title">Title:</label>
+                <input type="text" id="title" required>
+
+                <label for="content">Content:</label>
+                <textarea  id="content" required></textarea>
+                <button type="submit">Add Content</button>
+            </form>
+        </section>
+        </main>
+        <footer>
+            <p>&copy;2024 My Simple Belog Site</p>
+        </footer>
+
+        <script src="script.js"></script>
+</body>
+</html>
